@@ -1,0 +1,26 @@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - loggers
+          - health
+  endpoint:
+    loggers:
+      enabled: true
+
+logging:
+  level:
+    root: ERROR
+    org:
+      springframework:
+        security: WARN
+
+spring:
+  application:
+    name: greeter
+
+aws:
+  # change to your target aws region
+  region: us-east-1
